@@ -3,7 +3,7 @@
 This package is a uwuified version of `fresh` in [cpsc411-pub](https://github.com/cpsc411/cpsc411-pub)
 
 ```racket
-(require fwesh)
+(require cpsc411/fwesh)
 
 (fwesh 'hello)
 ;; => 'hewwo.1
