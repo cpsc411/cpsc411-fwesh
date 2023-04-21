@@ -14,5 +14,6 @@ This package is a uwuified version of `fresh` in [cpsc411-pub](https://github.co
 Run
 
 ```bash
-raco pkg install https://github.com/Calvin-LL/fwesh.git
+raco pkg install https://github.com/cpsc411/cpsc411-fwesh.git?path=cpsc411-fwesh-lib
+raco pkg install https://github.com/cpsc411/cpsc411-fwesh.git?path=cpsc411-fwesh-doc
 ```
