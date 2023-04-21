@@ -5,14 +5,12 @@
          fwesh)
 
 (define uwu-map
-  (list '(#rx"r|l" "w")
-        '(#rx"R|L" "W")
-        '(#rx"n([aeiou])" "ny\\1")
-        '(#rx"N([aeiou])" "Ny\\1")
-        '(#rx"N([AEIOU])" "NY\\1")
-        '(#rx"ove" "uv")
-        '(#rx"Ove" "Uv")
-        '(#rx"oVe" "uV")))
+  (list
+   '(#rx"ove" "uv")
+   '(#rx"Ove" "Uv")
+   '(#rx"oVe" "uV")
+   '(#rx"r|l" "w")
+   '(#rx"R|L" "W")))
 
 (define (uwuify-string s)
   (foldl (lambda (rule s) (regexp-replace* (car rule) s (cadr rule))) s uwu-map))
